@@ -1,0 +1,439 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/yorick/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.15/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="二维图像的语义分割网络">二维图像的语义分割网络 </h1>
+<ul>
+<li><a href="#%E4%BA%8C%E7%BB%B4%E5%9B%BE%E5%83%8F%E7%9A%84%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2%E7%BD%91%E7%BB%9C">二维图像的语义分割网络</a>
+<ul>
+<li><a href="#1-%E7%8E%AF%E5%A2%83">1. 环境</a>
+<ul>
+<li><a href="#11-%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83">1.1. 基本环境</a></li>
+<li><a href="#12-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7">1.2. 环境管理工具</a></li>
+<li><a href="#13-%E5%85%B7%E4%BD%93%E7%8E%AF%E5%A2%83">1.3. 具体环境</a></li>
+</ul>
+</li>
+<li><a href="#2-%E4%BB%BB%E5%8A%A1%E8%A6%81%E6%B1%82">2. 任务要求</a></li>
+<li><a href="#3-%E4%BB%BB%E5%8A%A1%E5%AE%9E%E7%8E%B0">3. 任务实现</a>
+<ul>
+<li><a href="#31-%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AE%B9">3.1. 实现内容</a></li>
+<li><a href="#32-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">3.2. 使用方法：</a></li>
+<li><a href="#33-%E6%95%B0%E6%8D%AE%E9%9B%86">3.3. 数据集</a>
+<ul>
+<li><a href="#331-%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">3.3.1. 数据集目录结构</a></li>
+<li><a href="#332-%E6%95%B0%E6%8D%AE%E9%9B%86%E8%AF%B4%E6%98%8E">3.3.2. 数据集说明</a></li>
+<li><a href="#333-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86">3.3.3. 数据预处理</a></li>
+</ul>
+</li>
+<li><a href="#34-%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84">3.4. 网络架构</a>
+<ul>
+<li><a href="#341-unet">3.4.1. UNet</a></li>
+<li><a href="#342-resnet-based">3.4.2. ResNet-Based</a></li>
+<li><a href="#343-%E7%BD%91%E7%BB%9C%E5%AF%B9%E6%AF%94">3.4.3. 网络对比</a></li>
+</ul>
+</li>
+<li><a href="#35-%E8%AE%AD%E7%BB%83%E8%BF%87%E7%A8%8B%E5%8F%AF%E8%A7%86%E5%8C%96">3.5. 训练过程可视化</a>
+<ul>
+<li><a href="#351-tensorboard%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">3.5.1. TensorBoard使用方法</a></li>
+<li><a href="#352-%E5%8F%AF%E8%A7%86%E5%8C%96%E5%86%85%E5%AE%B9">3.5.2. 可视化内容</a></li>
+<li><a href="#353-%E5%A4%9A%E6%AC%A1%E8%AE%AD%E7%BB%83%E7%BB%93%E6%9E%9C%E5%AF%B9%E6%AF%94">3.5.3. 多次训练结果对比</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4-%E5%90%8E%E7%BB%AD%E8%AE%A1%E5%88%92">4. 后续计划</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-环境">1. 环境 </h2>
+<h3 id="11-基本环境">1.1. 基本环境 </h3>
+<ul>
+<li>Python 3.10.15</li>
+<li>PyTorch 版本: 2.5.0+cu124</li>
+<li>CUDA 版本: 12.4</li>
+<li>CUDA 设备名称: NVIDIA GeForce GTX 1650</li>
+</ul>
+<h3 id="12-环境管理工具">1.2. 环境管理工具 </h3>
+<ul>
+<li>miniconda</li>
+<li>创建pytorch环境并激活</li>
+</ul>
+<h3 id="13-具体环境">1.3. 具体环境 </h3>
+<details>
+<summary>点击展开查看详细环境信息</summary>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Collecting environment information...
+PyTorch version: 2.5.0+cu124
+Is debug build: False
+CUDA used to build PyTorch: 12.4
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 22.04.3 LTS (x86_64)
+GCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Clang version: Could not collect
+CMake version: Could not collect
+Libc version: glibc-2.35
+
+Python version: 3.10.15 (main, Oct  3 2024, 07:27:34) [GCC 11.2.0] (64-bit runtime)
+Python platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+Is CUDA available: True
+CUDA runtime version: 12.6.77
+CUDA_MODULE_LOADING set to: LAZY
+GPU models and configuration: GPU 0: NVIDIA GeForce GTX 1650
+Nvidia driver version: 560.94
+cuDNN version: Could not collect
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: True
+
+CPU:
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      48 bits physical, 48 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             12
+On-line CPU(s) list:                0-11
+Vendor ID:                          AuthenticAMD
+Model name:                         AMD Ryzen 5 4600H with Radeon Graphics
+CPU family:                         23
+Model:                              96
+Thread(s) per core:                 2
+Core(s) per socket:                 6
+Socket(s):                          1
+Stepping:                           1
+BogoMIPS:                           5988.55
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip rdpid
+Virtualization:                     AMD-V
+Hypervisor vendor:                  Microsoft
+Virtualization type:                full
+L1d cache:                          192 KiB (6 instances)
+L1i cache:                          192 KiB (6 instances)
+L2 cache:                           3 MiB (6 instances)
+L3 cache:                           4 MiB (1 instance)
+Vulnerability Gather data sampling: Not affected
+Vulnerability Itlb multihit:        Not affected
+Vulnerability L1tf:                 Not affected
+Vulnerability Mds:                  Not affected
+Vulnerability Meltdown:             Not affected
+Vulnerability Mmio stale data:      Not affected
+Vulnerability Retbleed:             Mitigation; untrained return thunk; SMT enabled with STIBP protection
+Vulnerability Spec rstack overflow: Mitigation; safe RET
+Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:           Mitigation; Retpolines, IBPB conditional, STIBP always-on, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Not affected
+
+Versions of relevant libraries:
+[pip3] numpy==1.23.5
+[pip3] torch==2.5.0
+[pip3] torch-tb-profiler==0.4.3
+[pip3] torchvision==0.20.0
+[pip3] triton==3.1.0
+[conda] numpy                     1.23.5                   pypi_0    pypi
+[conda] torch                     2.5.0                    pypi_0    pypi
+[conda] torch-tb-profiler         0.4.3                    pypi_0    pypi
+[conda] torchvision               0.20.0                   pypi_0    pypi
+[conda] triton                    3.1.0                    pypi_0    pypi
+</code></pre></details>
+<h2 id="2-任务要求">2. 任务要求 </h2>
+<p>使用tensorflow/pytorch框架，配置一个二维图像的语义分割网络。要求5号之前完成：</p>
+<ol>
+<li>能够根据参数选择加载UNet/Resnet网络；</li>
+<li>能够根据参数选择加载不同的语义分割数据集（cityscapes、CamVid）；</li>
+<li>能够加载一个预训练模型；</li>
+<li>能够使用tensorboard或torchvision对训练过程可视化。</li>
+</ol>
+<h2 id="3-任务实现">3. 任务实现 </h2>
+<h3 id="31-实现内容">3.1. 实现内容 </h3>
+<ol>
+<li>
+<p>基础训练脚本框架搭建</p>
+<ul>
+<li>参数解析设置</li>
+<li>数据加载器接口</li>
+<li>模型选择功能（UNet/ResNet）</li>
+<li>TensorBoard可视化支持</li>
+</ul>
+</li>
+<li>
+<p>训练循环实现</p>
+<ul>
+<li>GPU训练支持</li>
+<li>损失计算</li>
+<li>优化器设置</li>
+<li>进度显示</li>
+<li>模型保存</li>
+</ul>
+</li>
+</ol>
+<p><strong>关键特性</strong></p>
+<ul>
+<li>支持多种模型架构选择</li>
+<li>支持预训练模型加载</li>
+<li>支持不同数据集（cityscapes/camvid）</li>
+<li>自动GPU/CPU设备选择</li>
+<li>TensorBoard集成</li>
+<li>定期模型检查点保存</li>
+</ul>
+<h3 id="32-使用方法">3.2. 使用方法： </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python train.py <span class="token parameter variable">--model</span> <span class="token punctuation">[</span>unet/resnet<span class="token punctuation">]</span> <span class="token punctuation">\</span>
+                <span class="token parameter variable">--dataset</span> <span class="token punctuation">[</span>cityscapes/camvid<span class="token punctuation">]</span> <span class="token punctuation">\</span>
+                <span class="token parameter variable">--data_dir</span> DATA_DIR <span class="token punctuation">\</span>
+                <span class="token parameter variable">--log_dir</span> LOG_DIR <span class="token punctuation">\</span>
+                <span class="token parameter variable">--batch_size</span> BATCH_SIZE <span class="token punctuation">\</span>
+                <span class="token parameter variable">--epochs</span> EPOCHS <span class="token punctuation">\</span>
+                <span class="token parameter variable">--num_classes</span> NUM_CLASSES <span class="token punctuation">\</span>
+                <span class="token punctuation">[</span>--pretrained PRETRAINED_MODEL_PATH<span class="token punctuation">]</span>
+</code></pre><p>具体运行命令示例</p>
+<p>示例1：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python train.py <span class="token parameter variable">--model</span> unet <span class="token parameter variable">--dataset</span> cityscapes <span class="token parameter variable">--data_dir</span> ./data <span class="token parameter variable">--log_dir</span> ./logs <span class="token parameter variable">--batch_size</span> <span class="token number">2</span> <span class="token parameter variable">--epochs</span> <span class="token number">50</span> <span class="token parameter variable">--num_classes</span> <span class="token number">19</span>
+</code></pre><p>示例2：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python train.py <span class="token parameter variable">--model</span> resnet <span class="token punctuation">\</span>
+                <span class="token parameter variable">--dataset</span> camvid <span class="token punctuation">\</span>
+                <span class="token parameter variable">--data_dir</span> ./data <span class="token punctuation">\</span>
+                <span class="token parameter variable">--log_dir</span> ./logs/camvid/resnet <span class="token punctuation">\</span>
+                <span class="token parameter variable">--batch_size</span> <span class="token number">16</span> <span class="token punctuation">\</span>
+                <span class="token parameter variable">--epochs</span> <span class="token number">50</span> <span class="token punctuation">\</span>
+                <span class="token parameter variable">--num_classes</span> <span class="token number">11</span> 
+</code></pre><h3 id="33-数据集">3.3. 数据集 </h3>
+<h4 id="331-数据集目录结构">3.3.1. 数据集目录结构 </h4>
+<p>项目支持两种数据集：Cityscapes 和 CamVid，它们的目录结构如下：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>cityscapes
+│
+├── leftImg8bit/     # 原始图像
+│   ├── train/
+│   ├── val/
+│   └── test/
+│
+└── gtFine/          # 精细标注
+    ├── train/
+    ├── val/
+    └── test/
+</code></pre><pre data-role="codeBlock" data-info="" class="language-text"><code>camvid
+│
+├── train/           # 训练图像
+├── train_labels/    # 训练标签
+├── val/             # 验证图像
+├── val_labels/      # 验证标签
+├── test/            # 测试图像
+└── test_labels/     # 测试标签
+</code></pre><h4 id="332-数据集说明">3.3.2. 数据集说明 </h4>
+<ol>
+<li>
+<p>Cityscapes</p>
+<ul>
+<li>图像格式：PNG</li>
+<li>训练图像尺寸：2048x1024</li>
+<li>类别数：19</li>
+<li>下载地址：<a href="https://www.cityscapes-dataset.com/">https://www.cityscapes-dataset.com/</a></li>
+</ul>
+</li>
+<li>
+<p>CamVid</p>
+<ul>
+<li>图像格式：PNG</li>
+<li>训练图像尺寸：960x720</li>
+<li>类别数：11</li>
+<li>下载地址：<a href="http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/">http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="333-数据预处理">3.3.3. 数据预处理 </h4>
+<ul>
+<li>所有图像会被调整为统一大小：512x512</li>
+<li>图像值范围：0-1（归一化）</li>
+<li>标签编码：整数编码（0 到 num_classes-1）</li>
+</ul>
+<h3 id="34-网络架构">3.4. 网络架构 </h3>
+<h4 id="341-unet">3.4.1. UNet </h4>
+<p>UNet是一种经典的编码器-解码器结构的分割网络：</p>
+<ul>
+<li>
+<p>结构特点：</p>
+<ul>
+<li>U形对称结构</li>
+<li>包含4次下采样和4次上采样</li>
+<li>特征图通过跳跃连接传递</li>
+<li>使用双卷积块进行特征提取</li>
+</ul>
+</li>
+<li>
+<p>优点：</p>
+<ul>
+<li>结构简单，易于理解和实现</li>
+<li>适用于小规模数据集</li>
+<li>跳跃连接有助于保留细节信息</li>
+<li>训练速度较快</li>
+</ul>
+</li>
+<li>
+<p>局限性：</p>
+<ul>
+<li>感受野相对较小</li>
+<li>缺乏全局上下文信息</li>
+<li>特征提取能力相对有限</li>
+</ul>
+</li>
+</ul>
+<h4 id="342-resnet-based">3.4.2. ResNet-Based </h4>
+<p>基于ResNet的分割网络采用预训练的ResNet作为骨干网络：</p>
+<ul>
+<li>
+<p>结构特点：</p>
+<ul>
+<li>使用预训练的ResNet-50作为编码器</li>
+<li>残差连接帮助训练更深的网络</li>
+<li>通过转置卷积进行上采样</li>
+<li>强大的特征提取能力</li>
+</ul>
+</li>
+<li>
+<p>优点：</p>
+<ul>
+<li>可以利用预训练模型</li>
+<li>更强的特征提取能力</li>
+<li>适合处理复杂场景</li>
+<li>有更好的泛化能力</li>
+</ul>
+</li>
+<li>
+<p>局限性：</p>
+<ul>
+<li>模型参数量大</li>
+<li>训练和推理速度较慢</li>
+<li>需要更多的计算资源</li>
+<li>可能过度关注高层语义特征</li>
+</ul>
+</li>
+</ul>
+<h4 id="343-网络对比">3.4.3. 网络对比 </h4>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>UNet</th>
+<th>ResNet-Based</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数量</td>
+<td>较少（约7M）</td>
+<td>较多（约25M）</td>
+</tr>
+<tr>
+<td>训练速度</td>
+<td>快</td>
+<td>慢</td>
+</tr>
+<tr>
+<td>推理速度</td>
+<td>快</td>
+<td>慢</td>
+</tr>
+<tr>
+<td>预训练支持</td>
+<td>无</td>
+<td>有</td>
+</tr>
+<tr>
+<td>特征提取能力</td>
+<td>中等</td>
+<td>强</td>
+</tr>
+<tr>
+<td>内存占用</td>
+<td>低</td>
+<td>高</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>医学图像等简单场景</td>
+<td>自动驾驶等复杂场景</td>
+</tr>
+</tbody>
+</table>
+<h3 id="35-训练过程可视化">3.5. 训练过程可视化 </h3>
+<h4 id="351-tensorboard使用方法">3.5.1. TensorBoard使用方法 </h4>
+<ol>
+<li>启动TensorBoard服务：</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs <span class="token parameter variable">--port</span><span class="token operator">=</span><span class="token number">6006</span>
+</code></pre><ol start="2">
+<li>在浏览器中访问：<a href="http://localhost:6006">http://localhost:6006</a></li>
+</ol>
+<h4 id="352-可视化内容">3.5.2. 可视化内容 </h4>
+<ol>
+<li>
+<p>SCALARS标签页：</p>
+<ul>
+<li>训练损失曲线（Loss/train）</li>
+<li>学习率变化（Learning_rate）</li>
+</ul>
+</li>
+<li>
+<p>IMAGES标签页：</p>
+<ul>
+<li>输入图像（Image/input）</li>
+<li>目标分割图（Image/target）</li>
+<li>预测分割图（Image/pred）</li>
+</ul>
+</li>
+<li>
+<p>HISTOGRAMS标签页：</p>
+<ul>
+<li>模型参数分布（weight/*）</li>
+<li>梯度分布（grad/*）</li>
+</ul>
+</li>
+</ol>
+<h4 id="353-多次训练结果对比">3.5.3. 多次训练结果对比 </h4>
+<p>可以同时查看多个实验的结果：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># 查看所有实验结果</span>
+tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs
+
+<span class="token comment"># 查看特定实验结果</span>
+tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs/cityscapes/resnet  <span class="token comment"># ResNet在Cityscapes上的结果</span>
+tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs/camvid/unet        <span class="token comment"># UNet在CamVid上的结果</span>
+</code></pre><h2 id="4-后续计划">4. 后续计划 </h2>
+<ol>
+<li>添加验证集评估</li>
+<li>实现多个评估指标</li>
+<li>添加数据增强</li>
+<li>支持多GPU训练</li>
+<li>添加学习率调度器</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
