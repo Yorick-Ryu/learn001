@@ -330,6 +330,10 @@ tensorboard --logdir=logs/cityscapes/resnet  # ResNet在Cityscapes上的结果
 tensorboard --logdir=logs/camvid/unet        # UNet在CamVid上的结果
 ```
 
+![alt text](img/image.png)
+
+![alt text](img/image-1.png)
+
 ## 4. 后续计划
 
 1. 添加验证集评估
